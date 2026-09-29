@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Crew Start</title>
+  <meta name="description" content="First-week onboarding for a trade crew. Checklists, policy acks, draft access requests. A human still creates the accounts." />
+  <meta name="theme-color" content="#101820" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Crew Start" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23101820' width='100' height='100'/%3E%3Ctext y='.78em' x='12' font-size='72'%3E%E2%9C%94%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css?v=20260928-1" />
+</head>
+<body>
+  <a class="skip" href="#view">Skip to checklist</a>
+  <header class="top">
+    <div>
+      <p class="mark" id="shop-name">Crew Start</p>
+      <p class="tag" id="shop-tag">First week. Then they can run.</p>
+    </div>
+    <div class="top-meta">
+      <time id="bar-date"></time>
+      <a class="sell-link" href="sell.html">Offer</a>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="Views">
+    <button type="button" data-route="crew" aria-current="page">Crew</button>
+    <button type="button" data-route="desk">Desk</button>
+    <button type="button" data-route="settings">Shop</button>
+  </nav>
+
+  <main id="view"></main>
+  <p class="cache-note">This phone is the cache. A paying shop gets a Worker ledger. Access stays a draft until a human sends it.</p>
+
+  <script src="app.js?v=20260928-1"></script>
+</body>
+</html>
